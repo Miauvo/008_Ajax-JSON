@@ -1,0 +1,19 @@
+ul {
+    li {
+      
+        button{
+            padding: 2px 5px;
+        }
+
+        .edit{
+            display: none;
+        }
+        &.edit .edit{
+            display: initial; //устанавливает свойство элемента в начальное (или по умолчанию) значение.
+        }
+        &.edit .noedit{
+            display: none;
+        }
+    }
+
+}

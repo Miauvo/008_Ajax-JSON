@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IJQuery Ajax Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1> Students: </h1>
+<ul id="students">
+
+    <script type="text/template" id="order-template">
+            <li data-id="{{id}}">
+                <p>
+                    <strong>Name:</strong>
+                    <span class ="noedit name">{{name}}</span>
+                                    <input class="edit name"/>
+                </p>
+                <p><strong>Age:</strong>
+                    <span class ="noedit age">{{age}}</span>
+                                    <input class="edit age"/>
+                </p>
+                <button data-id='{{id}}' class='remove'>X</button>
+            <button class="editStudent noedit">Edit</button>
+            <button class="saveEditStudent edit">Save</button>
+            <button class="cancelEditStudent edit">Cancel</button>
+        </li>
+    </script>
+
+</ul>
+
+<h4> Add a Student: </h4>
+<p>name: <input type="text" id ="name"></p>
+<p>age: <input type="text" id ="age"></p>
+<button id="add_student">Add!</button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js" ></script>
+
+</body>
+</html>

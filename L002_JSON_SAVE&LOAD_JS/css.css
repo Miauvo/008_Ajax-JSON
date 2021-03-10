@@ -1,0 +1,26 @@
+input{
+    width: 150px;
+    margin: 5px 15px;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+input[type=button]{
+    width: 150px;
+   background-color: rgb(152, 207, 152);
+}
+textarea{
+    margin: 5px 15px;
+}
+body{
+    background-color:rgb(152, 207, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    background-color:rgba(255, 255, 255, 0.7);
+    border: 1px solid black;
+    padding: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h4> Add post: </h4>
+        <p>userId:   <input type="number" id ="userId" value="1"></p>
+        <p>title:   <input type="text" id ="title" value="title"></p>
+        <p>body:    <input type="text" id ="body" value="body"></p>
+    <button id="add_post">Add!</button>
+    <button id="show_post">Show!</button>
+    <ul id="posts">
+       
+        <script type="text/template" id="order-template">
+            <li data-id="{{id}}">
+                <p>
+                    <strong>userId:</strong>
+                    <span class ="noedit userId">{{userId}}</span>                                   
+                </p>
+                <p><strong>title:</strong>
+                    <span class ="noedit title">{{title}}</span>                                
+                </p>
+                <p>
+                    <strong>body:</strong>
+                    <span class ="noedit body">{{body}}</span>                                 
+                </p>
+            </li>
+        </script>
+
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"  language="JavaScript" type="text/javascript"></script>
+    <script src="create.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js" ></script>
+
+</body>
+</html>

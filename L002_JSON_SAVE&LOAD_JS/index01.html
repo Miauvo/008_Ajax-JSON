@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="js01.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <form id="form1" onsubmit="SendObj(this);return false">        
+        <h3>Cat object</h3>        
+        <label for="name">Name:</label>
+        <input name="name" type="text" size="15" value="Barsick">
+        
+        <label for="age">Age:</label>
+        <input name="age" type="number" size="5" value="5">
+
+        <input type="submit" value="Parse to JSON">
+    </form>
+    <hr/>
+
+    <form id="form2" onsubmit="SendJSON(this);return false">
+        
+        <h3>JSON</h3>
+        <p></p>
+        <label for="json">JSON:</label>
+        <textarea name="json" rows="5" cols="46"></textarea>
+     
+        <input type="submit" value="Parse to object">
+    </form>
+    </div>
+
+
+</body>
+</html>
